@@ -106,7 +106,7 @@ const turnoAI = (puntosMinimos) => {
             alert('La AI te ha vencido');
         }
 
-    }, 65);
+    }, 30);
 
 
 
