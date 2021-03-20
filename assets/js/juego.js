@@ -12,6 +12,7 @@ let puntosPlayer = 0,
     puntosPC = 0;
 
 //Referencias del HTML
+const btnInicio       = document.querySelector('#btnInicio');
 const btnPedir       = document.querySelector('#btnPedir');
 const btnTerminar    = document.querySelector('#btnTerminar');
 const divCartaJug    = document.querySelector('#player-card');
@@ -150,6 +151,25 @@ btnTerminar.addEventListener('click',() => {
     btnTerminar.disabled = true;
     turnoAI(puntosPlayer);
     
+});
+
+btnInicio.addEventListener('click', () => {
+    console.clear();
+    deck = [];
+    deck = crearDeck();
+    puntosPlayer = 0;
+    puntosPC = 0;
+
+    puntosHTML[0].innerText = 0;
+    puntosHTML[1].innerText = 0;
+
+    divCartaJug.innerHTML = '';
+    divCartaPC.innerHTML = '';
+
+    btnPedir.disabled = false;
+    btnTerminar.disabled = false;
+
+
 });
 
 
