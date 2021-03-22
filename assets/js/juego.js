@@ -4,7 +4,11 @@
 // 2H = Two of Hearts (Corazones)
 // 2S = Two of Spades (Espadas)
 
-let deck = [];
+//funcion anonima 
+(() => {
+    'use strict'
+
+    let deck = [];
 const tiposC = ['C', 'D', 'H', 'S'];
 const especialesC = ['A', 'J', 'Q', 'K'];
 
@@ -39,9 +43,8 @@ const crearDeck = () => {
         }
     }
 
-    // console.log({deck});
+
     deck = _.shuffle(deck);
-    console.log({ deck });
     return deck;
 
 }
@@ -109,10 +112,7 @@ const turnoAI = (puntosMinimos) => {
     }, 100);
 
 
-
 }
-
-// const valor = valorCarta(pedirCarta());
 
 //eventos
 
@@ -171,5 +171,9 @@ btnInicio.addEventListener('click', () => {
 
 
 });
+
+})();
+
+
 
 
