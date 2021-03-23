@@ -15,18 +15,16 @@
 
     <div class="row mt-2">
         <div id = "divBotones" class="col text-center">
-            <button id= "btnPedir" type="button" class="btn btn-success">Pedir Carta</button>
-            <button id= "btnTerminar" type="button" class="btn btn-danger">Pasar el turno</button>
-            <button id= "btnInicio" type="button" class="btn btn-primary">Nuevo Juego</button>
+            <button id= "btnInicio" type="button" class="btn btn-primary">Iniciar Juego</button>
+            <button id= "btnPedir" disabled ="disabled" type="button" class="btn btn-success">Pedir Carta</button>
+            <button id= "btnTerminar" disabled ="disabled" type="button" class="btn btn-danger">Pasar el turno</button>
         </div>
     </div>
 
     <div class="row container">
         <div class="col">
             <h1>Jugador 1 - <small>0</small></h1>
-            <div id="player-card">
-                <!-- <img class = "carta" src="assets/cartas/4C.png"> -->
-
+            <div id="player-card" class="divCartas">
             </div>
         </div>
     </div>
@@ -34,14 +32,13 @@
     <div class="row container">
         <div class="col">
             <h1>Rival - <small>0</small></h1>
-            <div id="rival-card">
-                <!-- <img class = "carta" src="assets/cartas/4C.png"> -->
+            <div id="rival-card" class="divCartas">
             </div>
         </div>
     </div>
     
     <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/juego.js"></script>
+    <script src="assets/js/juego-min.js"></script>
 
 </body>
 </html>
